@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --spacer-3: 1rem;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.44;
+}
+
+h1, h2 {
+    color: #222222;
+}
+
+p {
+    padding-top: 0.625rem;
+    color: #707070;
+}
+
+img {
+    transform: scale(0.5);
+}
+  
+.header {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #20d397;
+    position: fixed;
+}
+
+.header_left {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-left: 6.875rem;
+}
+
+.header_right {
+    display: flex;
+    padding-top: 0.5rem;
+}
+
+.header_right_link {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #ffffff;    
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 25.2rem;
+    width: 90%;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    width: 85%;
+    place-items: center;
+    transform: translateX(6.55rem);
+}
+
+.box_one, .box_two, .box_three {
+    border-radius: 3px;
+    border-color: #dddddd;
+    border-width: 2px;
+    border-style: solid;
+    width: 21.25rem;
+    height: 24.75rem;
+    margin-top: 1.5rem;
+    padding: var(--spacer-3) var(--spacer-3) 0 var(--spacer-3);
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, .15);
+}
+
+.title {
+    padding-top: 3.75rem;
+    padding-left: 7.9rem;
+    color: #222222;
+}
+
+.logo {
+   transform: translateY(-1.35rem);
+}
+
+.dogos {
+    color: #ffffff;
+}
+
+.button {
+    padding: 0.625rem 2.5rem;
+    background-color: #8a2be2;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.learn_more {
+    text-decoration: none;
+    color: #ffffff;
+    transform: translateY(0.25rem);
+}
+
+.button_one {
+    margin-top: 1.25rem;
+}
+
+.button_two {
+    margin-top: 2rem;
+}
+
+.button_three {
+    margin-top: 2.65rem;
+}
+
+@media (max-width: 768px) {
+    .header {
+        z-index: 1;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 0.1rem;
+        width: 100%;
+    }
+    .header_left {
+        padding-left: 0.5rem;
+    }
+    .header_right {
+        transform: translateX(-0.3rem)
+    }
+    .title {
+        padding-left: 1.4rem;
+    }
+    .boxes {
+        grid-template-columns: repeat(1, 1fr);
+        transform: translateX(1.4em);
+    }
+    .box_one, .box_two, .box_three {
+        width: 27.25rem;
+        height: 20.25rem;
+    }
+    .box_three {
+        margin-bottom: 2.75rem;
+    }
+    .button_one {
+        margin-top: 1.25rem;
+    }    
+    .button_two {
+        margin-top: 2rem;
+    }    
+    .button_three {
+        margin-top: 1.25rem;
+    }
+}
